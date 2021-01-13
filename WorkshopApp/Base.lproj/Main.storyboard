@@ -457,8 +457,8 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yo-7K-2TE">
-                                    <rect key="frame" x="50" y="4" width="275" height="36"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <rect key="frame" x="50" y="7" width="275" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <state key="normal" title="Choose"/>
                                     <connections>
                                         <action selector="choosePressed:" destination="Bas-vp-mbN" eventType="touchUpInside" id="Bsu-rY-r4r"/>
@@ -474,21 +474,21 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="portfolioCell" rowHeight="276" id="qWw-Jq-F7w" customClass="PortfolioTableViewCell" customModule="WorkshopApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="375" height="276"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="portfolioCell" rowHeight="257" id="qWw-Jq-F7w" customClass="PortfolioTableViewCell" customModule="WorkshopApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="257"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qWw-Jq-F7w" id="HaD-h4-ywd">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="275.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="256.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wkM-dU-RRe">
-                                            <rect key="frame" x="16" y="25" width="343" height="197"/>
+                                            <rect key="frame" x="16" y="11" width="343" height="197.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="wkM-dU-RRe" secondAttribute="height" multiplier="343:197" id="zil-xs-4p1"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dur-Z0-ZWR">
-                                            <rect key="frame" x="36" y="230" width="303" height="21"/>
+                                            <rect key="frame" x="36" y="216.5" width="303" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -497,8 +497,12 @@
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="dur-Z0-ZWR" secondAttribute="trailing" constant="20" id="18J-PX-3I6"/>
                                         <constraint firstItem="wkM-dU-RRe" firstAttribute="top" secondItem="HaD-h4-ywd" secondAttribute="topMargin" constant="14" id="1As-bu-cXG"/>
+                                        <constraint firstItem="wkM-dU-RRe" firstAttribute="top" secondItem="HaD-h4-ywd" secondAttribute="topMargin" id="3oT-Je-xiU"/>
+                                        <constraint firstItem="wkM-dU-RRe" firstAttribute="leading" secondItem="HaD-h4-ywd" secondAttribute="leadingMargin" id="7F9-Bb-r2Y"/>
                                         <constraint firstItem="dur-Z0-ZWR" firstAttribute="leading" secondItem="HaD-h4-ywd" secondAttribute="leadingMargin" constant="20" id="SlT-W0-172"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="dur-Z0-ZWR" secondAttribute="bottom" constant="53" id="Z8f-OO-7vf"/>
                                         <constraint firstItem="wkM-dU-RRe" firstAttribute="leading" secondItem="HaD-h4-ywd" secondAttribute="leadingMargin" id="cJ4-aS-Fv0"/>
+                                        <constraint firstItem="wkM-dU-RRe" firstAttribute="trailing" secondItem="HaD-h4-ywd" secondAttribute="trailingMargin" id="rUE-rs-p5l"/>
                                         <constraint firstItem="dur-Z0-ZWR" firstAttribute="top" secondItem="wkM-dU-RRe" secondAttribute="bottom" constant="8" id="seB-N9-1uc"/>
                                         <constraint firstItem="wkM-dU-RRe" firstAttribute="trailing" secondItem="HaD-h4-ywd" secondAttribute="trailingMargin" id="t17-op-WFL"/>
                                     </constraints>

@@ -111,9 +111,9 @@ class RabotaDetaliViewController: UIViewController, CLLocationManagerDelegate, M
                     }
                 }
             }
-            
+            self.displayAlert(title: "Success", message: "Successful offer")
         }else{
-            displayAlert(title: "Error", message: "You must enter both cena and datum")
+            self.displayAlert(title: "Error", message: "You must enter both cena and datum")
         }
     }
     
@@ -129,6 +129,7 @@ class RabotaDetaliViewController: UIViewController, CLLocationManagerDelegate, M
                     for obj in baranja{
                         obj["status"] = "Odbieno"
                         obj.deleteInBackground()
+                        self.displayAlert(title: "Success", message: "Offer denied")
                     }
                 }
             }
