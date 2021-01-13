@@ -138,6 +138,7 @@ class DetailsViewController: UIViewController {
                 }
             }
             firstButtonOutlet.isHidden = true
+            self.displayAlert(title: "Success", message: "Offer deleted")
         }else if self.ponudaTip == "Dobiena Ponuda"{
             //prifati ponuda
             let query = PFQuery(className: "Baranje")
@@ -160,6 +161,7 @@ class DetailsViewController: UIViewController {
                     }
                 }
             }
+            self.displayAlert(title: "Success", message: "Offer accepted")
             firstButtonOutlet.isHidden = true
         }
     }
@@ -182,6 +184,7 @@ class DetailsViewController: UIViewController {
                     }
                 }
             }
+            self.displayAlert(title: "Success", message: "Offer denied")
             firstButtonOutlet.isHidden = true
         }
     }
