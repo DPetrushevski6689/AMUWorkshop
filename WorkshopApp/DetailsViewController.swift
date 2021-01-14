@@ -192,9 +192,11 @@ class DetailsViewController: UIViewController {
     
     func displayAlert(title: String, message:String){
         let alertCont = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alertCont.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
-            self.dismiss(animated: true, completion: nil)
-        }))
+        /*alertCont.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+            //self.dismiss(animated: true, completion: nil)
+        }))*/
+        
+        
         present(alertCont, animated: true, completion: nil)
     }
     
